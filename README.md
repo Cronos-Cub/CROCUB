@@ -32,6 +32,7 @@ Own a piece of the pride with our exclusive lion-themed NFTs. Each NFT is a uniq
 
 ### 🐾 Giveaways
 Keep a lookout for giveaways, airdrops and more exciting rewards.
+
 ---
 
 ## How to Get Started
@@ -62,9 +63,8 @@ Our token contract is deployed on the Cronos blockchain and can be viewed at:
 - **Total Supply**: 500,000,000 CROCUB
 
 ### Tokenomics
-- **60%**: Initial Distribution
-- **25%**: Staking Rewards
-- **10%**: Community and Marketing
+- **85%**: Initial Distribution
+- **10%**: Community Giveaway and Marketing
 - **5%**: Development Fund
 
 ---
@@ -108,6 +108,7 @@ CronosCub is more than a token; it’s a community of like-minded individuals wh
 - **Telegram**: 
 - **TikTok**: 
 - **Discord**: 
+- **Reddit**: https://reddit.com/r/CronosCub
 
 ---
 
