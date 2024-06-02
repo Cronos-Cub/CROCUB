@@ -4,7 +4,13 @@
 
 ---
 
-## Introduction
+# Table of Contents
+1. [Introduction](#introduction)
+
+
+---
+
+# Introduction
 
 Welcome to the official GitHub repository for the **CronosCub** memecoin, the most playful and fierce meme token on the Cronos blockchain! Inspired by the majestic lion of Crypto.com, $CROCUB takes it's place as the cub next in line to lead the pride! CronosCub is here to bring you a roaring good time. Whether you're a seasoned Crypto.com Lion or a new cub in the crypto jungle, **CronosCub** is designed by the community and for the community.
 
