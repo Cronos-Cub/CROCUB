@@ -92,14 +92,14 @@ Our token contract is deployed on the Cronos blockchain and can be viewed at:
 
 ## Roadmap
 
+Find a more detailed roadmap here: https://github.com/Cronos-Cub/CROCUB/blob/main/ROADMAP.md
+
 ### Phase 1: Cub Birth
 - ❌ Token launch on Cronos blockchain
 - ❌ Initial DEX Offering (IDO)
 - ❌ Community building and social media launch
 - ❌ First meme contest
 - ❌ Initial Community Giveaway
-
-read more about Phase 1 here:
 
 ### Phase 2: Cub Growth
 - ❌ NFT artwork release
