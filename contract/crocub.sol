@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract CronosCubToken is ERC20, ERC20Burnable, Ownable {
-    constructor() ERC20("Cronos Cub Token", "CROCUB") {
+    constructor() ERC20("Cronos Cub", "CROCUB") {
         _mint(msg.sender, 500_000_000_000 * 10 ** decimals());
     }
 
