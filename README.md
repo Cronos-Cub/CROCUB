@@ -6,11 +6,22 @@
 
 # Table of Contents
 [Introduction](#introduction)
+
 [Key Features](#key-features)
+
 [How to Get Started](#how-to-get-started)
+
 [Token Contract](#token-contract)
+
 [Roadmap](#roadmap)
 
+[Join the Pride](#join-the-pride)
+
+[Social Media](#social-media)
+
+[Contributors](#contributors)
+
+[]()
 
 ---
 
@@ -107,7 +118,7 @@ read more about Phase 1 here:
 
 CronosCub is more than a token; it’s a community of like-minded individuals who love fun, memes, and the potential of DeFi. Whether you're here for the memes, the staking rewards, or the exclusive NFTs, there's a place for you in our pride.
 
-### Stay Connected
+### Social Media
 
 - **Discord**:
 - **Reddit**: https://reddit.com/r/CronosCub
@@ -120,7 +131,7 @@ CronosCub is more than a token; it’s a community of like-minded individuals wh
 
 ## Contributors
 
-### Main Developer
+#### Main Developer
 Dehvon Curtis
 https://www.linkedin.com/in/dehvcurtis/
 
