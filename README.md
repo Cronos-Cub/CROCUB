@@ -81,12 +81,10 @@ Our token contract is deployed on the Cronos blockchain and can be viewed at:
 - **Name**: Cronos Cub
 - **Symbol**: `$CROCUB`
 - **Decimals**: 18
-- **Total Supply**: 500,000,000 CROCUB
+- **Total Supply**: 500,000,000,000 CROCUB
 
 ### Tokenomics
-- **85%**: Initial Distribution
-- **10%**: Community Giveaway and Marketing
-- **5%**: Development Fund
+note: Tokenomics whitepaper to be released soon, before launch.
 
 ---
 
