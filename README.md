@@ -13,6 +13,8 @@
 
 [Token Contract](#token-contract)
 
+[Token Allocation](#token-allocation)
+
 [Roadmap](#roadmap)
 
 [Join the Pride](#join-the-pride)
@@ -88,6 +90,17 @@ note: Tokenomics whitepaper to be released soon, before launch.
 
 ---
 
+## Token Allocation
+
+Allocation Plan
+
+- **Liquidity Pool**: 30% (150,000,000,000 CROCUB)
+- **Marketing and Community Building**: 20% (100,000,000,000 CROCUB)
+- **Partnerships and Ecosystem Growth**: 15% (75,000,000,000 CROCUB)
+- **Reserve**: 15% (75,000,000,000 CROCUB)
+- **Owner (Team and Advisors)**: 20% (100,000,000,000 CROCUB)
+---
+
 ## Roadmap
 
 Find a more detailed roadmap here: https://github.com/Cronos-Cub/CROCUB/blob/main/ROADMAP.md
@@ -119,12 +132,9 @@ CronosCub is more than a token; it’s a community of like-minded individuals wh
 
 ### Social Media
 
-- **Discord**:
 - **Reddit**: https://reddit.com/r/CronosCub
-- **Telegram**: 
 - **Twitter / X**: https://x.com/CronosCub
-- **TikTok**: 
-- **Website**:
+- **Website**: Coming Soon!
 
 ---
 
