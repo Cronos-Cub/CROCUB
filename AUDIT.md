@@ -1,23 +1,24 @@
 ### Audit of the Cronos Cub Token Contract
 
-This audit will focus on the security, functionality, and compliance aspects of the provided Cronos Cub token contract. The goal is to identify potential vulnerabilities and ensure the contract is robust and suitable for deployment on an exchange.
+This audit focuses on the security, functionality, and compliance aspects of the provided Cronos Cub token contract. The goal is to identify potential vulnerabilities and ensure the contract is robust and suitable for deployment on the Cronos blockchain.
 
 #### Contract Overview
 
-The contract implements an ERC-20 token with the following key features:
-1. **Initial Minting**: The contract mints a fixed supply of 500 million tokens upon deployment.
+The contract implements a CRC-20 token with the following key features:
+1. **Initial Minting**: The contract mints a fixed supply of 500 billion tokens upon deployment.
 2. **Burning**: Token holders can burn their tokens, reducing the total supply.
-3. **Ownership**: The `Ownable` module from OpenZeppelin is used to manage administrative privileges.
+3. **Ownership**: A custom ownership mechanism is used to manage administrative privileges.
 
 ### Detailed Analysis
 
 #### 1. **Initial Minting and Supply Control**
 
-The constructor ensures that 500 million tokens are minted to the deployer’s address at deployment:
+The constructor ensures that 500 billion tokens are minted to the deployer’s address at deployment:
 
 ```solidity
-constructor() ERC20("Cronos Cub Token", "CCT") {
-    _mint(msg.sender, 500_000_000 * 10 ** decimals());
+constructor() ERC20("Cronos Cub Token", "CROCUB") {
+    _owner = msg.sender;
+    _mint(msg.sender, INITIAL_SUPPLY);
 }
 ```
 
@@ -28,14 +29,14 @@ constructor() ERC20("Cronos Cub Token", "CCT") {
 **Recommendation**:
 - **Reviewed and Accepted**: The constructor correctly handles the initial minting.
 
-#### 2. **Overriding `_mint` Function**
+#### 2. **Preventing Further Minting**
 
-The `_mint` function is overridden to prevent any further minting after the initial supply is set:
+The `mint` function includes a check to ensure that minting can only occur if the total supply is zero, ensuring that minting only happens during the initial deployment phase:
 
 ```solidity
-function _mint(address account, uint256 amount) internal override onlyOwner {
+function mint(address to, uint256 amount) public onlyOwner {
     require(totalSupply() == 0, "Minting can only occur during initial deployment");
-    super._mint(account, amount);
+    _mint(to, amount);
 }
 ```
 
@@ -44,26 +45,9 @@ function _mint(address account, uint256 amount) internal override onlyOwner {
 - This prevents any further minting attempts after the initial minting, securing the token's fixed supply.
 
 **Recommendation**:
-- **Reviewed and Accepted**: The `_mint` function is correctly overridden to enforce a single minting event.
+- **Reviewed and Accepted**: The `mint` function is correctly designed to enforce a single minting event.
 
-#### 3. **Reverting Public `mint` Function**
-
-The public `mint` function reverts any attempt to call it after deployment:
-
-```solidity
-function mint(address to, uint256 amount) public onlyOwner {
-    revert("Minting is not allowed after initial deployment");
-}
-```
-
-**Security Implications**:
-- This function acts as an additional safeguard, ensuring that no external calls can mint new tokens.
-- It provides clarity and transparency regarding the minting restrictions.
-
-**Recommendation**:
-- **Reviewed and Accepted**: The public `mint` function correctly reverts any calls, ensuring no post-deployment minting.
-
-#### 4. **Burn Functionality**
+#### 3. **Burn Functionality**
 
 The contract includes standard burn functions from the `ERC20Burnable` extension:
 
@@ -84,22 +68,38 @@ function burnFrom(address account, uint256 amount) public override {
 **Recommendation**:
 - **Reviewed and Accepted**: The burn functions are correctly implemented and secure.
 
-#### 5. **Ownership Control**
+#### 4. **Ownership Control**
 
-The contract uses OpenZeppelin’s `Ownable` module to restrict certain functions to the contract owner:
+The contract uses a custom ownership mechanism to restrict certain functions to the contract owner:
+
+```solidity
+modifier onlyOwner() {
+    require(msg.sender == _owner, "Caller is not the owner");
+    _;
+}
+
+function owner() public view returns (address) {
+    return _owner;
+}
+
+function transferOwnership(address newOwner) public onlyOwner {
+    require(newOwner != address(0), "New owner is the zero address");
+    _owner = newOwner;
+}
+```
 
 **Security Implications**:
 - The owner has control over specific administrative functions, which is standard practice.
 - Ownership can be transferred if needed, allowing for flexible management.
 
 **Recommendation**:
-- **Reviewed and Accepted**: The use of `Ownable` is appropriate for administrative control.
+- **Reviewed and Accepted**: The custom ownership mechanism is appropriate for administrative control.
 
 ### General Security Practices
 
-1. **OpenZeppelin Libraries**:
-   - Using OpenZeppelin’s audited libraries ensures that the contract follows best practices and standards.
-   - These libraries are well-maintained and widely used in the Ethereum community.
+1. **Standard Libraries**:
+   - The contract uses OpenZeppelin’s ERC20 and ERC20Burnable libraries, which are well-maintained and widely used in the Ethereum and Cronos communities.
+   - These libraries follow best practices and standards, ensuring a secure foundation for the contract.
 
 2. **Testing**:
    - Conduct extensive unit tests to cover all edge cases and potential attack vectors.
@@ -107,18 +107,18 @@ The contract uses OpenZeppelin’s `Ownable` module to restrict certain function
 
 3. **Documentation**:
    - Provide clear documentation on the contract’s functionality, especially around the minting and burning features.
-   - Ensure transparency regarding the fixed supply and the non-functional mint function post-deployment.
+   - Ensure transparency regarding the fixed supply and the restricted mint function post-deployment.
 
 4. **Audit**:
    - It is highly recommended to have the contract audited by a third-party security firm before deployment. This can help identify and mitigate any unforeseen vulnerabilities.
 
-### Auditor Information
-
-Auditor: @dehvCurtis
-Linkedin: https://www.linkedin.com/in/dehvcurtis/
-
 ### Conclusion
 
-The provided Cronos Cub token contract is secure and meets the requirements for deployment on an exchange. It ensures a fixed supply of 500 million tokens, with minting restricted to the initial deployment. The contract is well-structured, using OpenZeppelin’s libraries for security and best practices.
+The provided Cronos Cub token contract is secure and meets the requirements for deployment on the Cronos blockchain. It ensures a fixed supply of 500 billion tokens, with minting restricted to the initial deployment. The contract is well-structured, using standard libraries for security and best practices.
 
 By following the recommendations, including conducting thorough testing and obtaining a third-party audit, the contract can be confidently deployed, providing a secure and reliable token for users.
+
+### Auditor Information
+Dehvon Curtis
+
+https://www.linkedin.com/in/dehvcurtis/
