@@ -13,7 +13,7 @@
 
 [Token Contract](#token-contract)
 
-[Token Allocation](#token-allocation)
+[Token Distribution](#token-distribution)
 
 [Roadmap](#roadmap)
 
@@ -90,15 +90,27 @@ note: Tokenomics whitepaper to be released soon, before launch.
 
 ---
 
-## Token Allocation
+## Token Distribution
 
-Allocation Plan
+| Allocation                             | Percentage | Amount (CROCUB)            |
+|----------------------------------------|------------|----------------------------|
+| **Liquidity Pool**                     | 20%        | 100,000,000,000            |
+| **Marketing and Community Building**   | 25%        | 125,000,000,000            |
+| **Partnerships and Ecosystem Growth**  | 20%        | 100,000,000,000            |
+| **Reserve**                            | 20%        | 100,000,000,000            |
+| **Owner (Team and Advisors)**          | 15%        | 75,000,000,000             |
+| **Total Supply**                       | 100%       | 500,000,000,000            |
 
-- **Liquidity Pool**: 30% (150,000,000,000 CROCUB)
-- **Marketing and Community Building**: 20% (100,000,000,000 CROCUB)
-- **Partnerships and Ecosystem Growth**: 15% (75,000,000,000 CROCUB)
-- **Reserve**: 15% (75,000,000,000 CROCUB)
-- **Owner (Team and Advisors)**: 20% (100,000,000,000 CROCUB)
+#### Description
+
+- **Liquidity Pool (20%)**: Ensures sufficient liquidity for trading, reduces price volatility, and builds trust with users.
+- **Marketing and Community Building (25%)**: Provides resources for marketing campaigns, community engagement, and incentive programs.
+- **Partnerships and Ecosystem Growth (20%)**: Supports strategic partnerships, integrations, and ecosystem development.
+- **Reserve (20%)**: Provides a buffer for unforeseen expenses, future opportunities, or additional liquidity needs.
+- **Owner (Team and Advisors) (15%)**: Incentivizes the development team and advisors to continue contributing to the project. Implementing vesting schedules can help align long-term interests.
+
+By following this plan, we can ensure a fair and balanced token distribution that supports both immediate and long-term needs of the Cronos Cub Token project.
+
 ---
 
 ## Roadmap
