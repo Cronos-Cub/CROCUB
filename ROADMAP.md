@@ -9,9 +9,13 @@
    - [x] Ensure the contract is audited by a reputable third-party security firm.
      - Audit can be found here: https://github.com/Cronos-Cub/CROCUB/blob/main/AUDIT.md
 
-**Deploy the Token on Cronos Blockchain**:
-   - [ ] Define the development environment used with tools like Solidity, Remix IDE, and Cronos-specific libraries.
-   - [ ] Compile and deploy the contract using tools like Remix IDE and a wallet that supports Cronos.
+**Deploy the Token on Cronos Testnet Blockchain**:
+   - [x] Compile and deploy the contract
+   - [x] Verify the contract on Cronos Explorer for transparency.
+     - Cronos Testnet Deployment: https://explorer.cronos.org/testnet/address/0x4ddc8a7bc548edd58e8a47cd54765635a3695add
+
+**Deploy the Token on Cronos Mainnet Blockchain**:
+   - [ ] Compile and deploy the contract
    - [ ] Verify the contract on Cronos Explorer for transparency.
 
 #### Step 2: Initial DEX Offering (IDO)
