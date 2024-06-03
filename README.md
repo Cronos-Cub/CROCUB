@@ -124,7 +124,7 @@ CronosCub is more than a token; it’s a community of like-minded individuals wh
 - **Discord**:
 - **Reddit**: https://reddit.com/r/CronosCub
 - **Telegram**: 
-- **Twitter**: 
+- **Twitter / X**: https://x.com/CronosCub
 - **TikTok**: 
 - **Website**:
 
