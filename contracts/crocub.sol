@@ -8,14 +8,59 @@ contract CronosCubToken is ERC20, ERC20Burnable {
     uint256 private constant INITIAL_SUPPLY = 500_000_000_000 * 10**18; // 500 billion tokens with 18 decimals
     address private _owner;
 
+    uint256 public feePercent = 3; // 3% total transaction fee
+    address public feeCollector;
+
     modifier onlyOwner() {
         require(msg.sender == _owner, "Caller is not the owner");
         _;
     }
 
-    constructor() ERC20("Cronos Cub Token", "CROCUB") {
+    constructor(address _feeCollector) ERC20("Cronos Cub Token", "CROCUB") {
         _owner = msg.sender;
         _mint(msg.sender, INITIAL_SUPPLY);
+        feeCollector = _feeCollector;
+    }
+
+    function transferWithFee(address recipient, uint256 amount) public returns (bool) {
+        address sender = _msgSender();
+        uint256 fee = (amount * feePercent) / 100;
+        uint256 amountAfterFee = amount - fee;
+
+        // Transfer the fee to the feeCollector
+        _transfer(sender, feeCollector, fee);
+
+        // Transfer the amount after fee deduction
+        _transfer(sender, recipient, amountAfterFee);
+
+        return true;
+    }
+
+    function transferFromWithFee(address sender, address recipient, uint256 amount) public returns (bool) {
+        uint256 fee = (amount * feePercent) / 100;
+        uint256 amountAfterFee = amount - fee;
+
+        // Transfer the fee to the feeCollector
+        _transfer(sender, feeCollector, fee);
+
+        // Transfer the amount after fee deduction
+        _transfer(sender, recipient, amountAfterFee);
+
+        uint256 currentAllowance = allowance(sender, _msgSender());
+        require(currentAllowance >= amount, "ERC20: transfer amount exceeds allowance");
+        _approve(sender, _msgSender(), currentAllowance - amount);
+
+        return true;
+    }
+
+    // Function to set the fee percentages
+    function setFeePercent(uint256 _feePercent) external onlyOwner {
+        feePercent = _feePercent;
+    }
+
+    // Function to set the fee collector address
+    function setFeeCollector(address _feeCollector) external onlyOwner {
+        feeCollector = _feeCollector;
     }
 
     // External mint function disabled to prevent any minting after deployment
