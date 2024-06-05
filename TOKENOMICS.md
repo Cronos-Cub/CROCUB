@@ -1,3 +1,19 @@
+### Smart Contract Overview
+1. **Total Supply**: 500 billion tokens ($CROCUB).
+2. **Initial Minting**: The entire supply is minted to the deployer’s address.
+3. **No Additional Minting**: No function allows additional minting post-deployment.
+4. **Burning Function**: Token holders can burn their tokens.
+
+### Initial Investment and Target Market Cap
+1. **Initial Investment**: $1,000 in USD (USDC or equivalent stablecoin).
+2. **Target Market Cap**: $1,000,000.
+3. **Initial Token Price Calculation**: 
+   \[
+   \text{Initial Token Price} = \frac{\text{Market Cap}}{\text{Total Supply}} = \frac{1,000,000}{500,000,000,000} = 0.000002 \text{ USD per } $CROCUB
+   \]
+
+### Revised Tokenomics Paper
+
 ## Cronos Cub Tokenomics Summary
 
 ### Overview
@@ -20,15 +36,15 @@ This document outlines the liquidity provision strategy for the Cronos Cub Token
   - **Reserve Fund**: 10% (50,000,000,000 $CROCUB)
 
 ### Initial DEX Offering (IDO)
-- **Platform**: Selected decentralized exchanges supporting Cronos blockchain.
-- **IDO Price**: $0.000002 per $CROCUB.
-- **IDO Allocation**: 150,000,000,000 $CROCUB.
-- **Total Funds Raised in IDO**: $300,000.
+- **Platform**: Selected decentralized exchanges supporting Cronos blockchain
+- **IDO Price**: $0.000002 per $CROCUB
+- **IDO Allocation**: 150,000,000,000 $CROCUB
+- **Total Funds Raised in IDO**: $300,000
 
 ### Market Capitalization
-- **Circulating Supply at Launch**: 150,000,000,000 $CROCUB.
-- **Initial Price**: $0.000002 per $CROCUB.
-- **Initial Market Cap**: $1,000,000.
+- **Circulating Supply at Launch**: 500,000,000,000 $CROCUB
+- **Initial Price**: $0.000002 per $CROCUB
+- **Initial Market Cap**: $1,000,000
 
 ### Initial Liquidity Provision
 
@@ -78,3 +94,5 @@ To ensure ongoing liquidity, the following strategies will be employed:
 ### Conclusion
 
 By providing an initial $1,000 in USD for liquidity, pairing it with 500 million tokens, and employing the outlined future funding and management strategies, the Cronos Cub Token can achieve and maintain the desired market cap of $1 million. This strategy ensures sufficient liquidity and price stability for successful trading on decentralized exchanges, while ongoing management and community engagement will support the token's growth and market presence.
+
+This revised tokenomics paper ensures all details align with the smart contract and the initial investment, maintaining accuracy and clarity.
