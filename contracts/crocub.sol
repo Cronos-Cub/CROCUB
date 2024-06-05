@@ -8,7 +8,7 @@ contract CronosCubToken is ERC20, ERC20Burnable {
     uint256 private constant INITIAL_SUPPLY = 500_000_000_000 * 10**18; // 500 billion tokens with 18 decimals
     address private _owner;
 
-    uint256 public feePercent = 3; // 3% total transaction fee
+    uint256 public feePercent = 2; // 2% total transaction fee
     address public feeCollector;
 
     struct VestingSchedule {
