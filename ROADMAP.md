@@ -12,7 +12,7 @@
 **Deploy the Token on Cronos Testnet Blockchain**:
    - [x] Compile and deploy the contract
    - [x] Verify the contract on Cronos Explorer for transparency.
-     - Cronos Testnet Deployment: https://explorer.cronos.org/testnet/address/0x4ddc8a7bc548edd58e8a47cd54765635a3695add
+     - Cronos Testnet Deployment: https://explorer.cronos.org/testnet/address/0x9420A348686c87D79eCfb28a6e275Cfc934A1c12 
 
 **Deploy the Token on Cronos Mainnet Blockchain**:
    - [ ] Compile and deploy the contract
