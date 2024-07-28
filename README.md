@@ -1,140 +1,76 @@
-# 🦁 Welcome to CronosCub! 🦁
+# 🦁 CronosCub ($CROCUB) Smart Contract
 
-### The Wildest Meme Token on the Cronos Blockchain!
+Welcome to the official repository for the CronosCub ($CROCUB) smart contract, a community-driven cryptocurrency project on the Cronos blockchain. CronosCub is all about **dusting**—the unique concept of distributing small amounts of tokens to token holder wallets. This innovative approach aims to engage users, promote adoption, and create a fun and inclusive community.
 
----
+## Overview
 
-# Table of Contents
-[Introduction](#introduction)
+CronosCub is designed for and by the Crypto.com community, leveraging the concept of dusting to spread small amounts of tokens (referred to as "dust") across the wallets of existing token holders. This not only raises awareness but also encourages active participation in the cryptocurrency ecosystem.
 
-[Key Features](#key-features)
+## Dusting Mechanism
 
-[How to Get Started](#how-to-get-started)
+The **dusting mechanism** is the heart of CronosCub. It involves distributing small, manageable amounts of $CROCUB tokens to a broad audience of token holders, thereby:
 
-[Token Contract](#token-contract)
+- **Increasing Awareness**: Introducing new users to the cryptocurrency space by providing them with additional tokens.
+- **Encouraging Participation**: Incentivizing users to learn more about cryptocurrencies and engage with the community.
+- **Building Community**: Fostering a sense of inclusion and excitement by making token ownership accessible to everyone.
 
-[Roadmap](#roadmap)
+## Gas Optimization
 
-[Join the Pride](#join-the-pride)
+The CronosCub smart contract is optimized for gas efficiency through:
 
-[Social Media](#social-media)
+- **Batch Operations**: Allows for the efficient distribution of dust in bulk, minimizing the number of transactions required.
+- **Minimized State Changes**: Efficient management of state variables to reduce gas costs.
+- **Efficient Data Types**: Using appropriate data types to save gas.
+- **Event Emission**: Utilizes events for transparency and efficient off-chain tracking without excessive on-chain data storage.
 
-[Contributors](#contributors)
+## Audit and Security
 
-[]()
+The CronosCub smart contract has undergone an internal audit, focusing on:
 
----
+- **Re-entrancy Protection**: Ensuring no vulnerabilities exist for re-entrancy attacks.
+- **Access Control**: Critical functions are protected by the `onlyOwner` modifier.
+- **State Management**: Correct handling of state variables and updates.
+- **Professional Audit Recommendation**: A professional third-party audit is recommended for comprehensive security validation.
 
-## Introduction
+## Features and Functions
 
-Welcome to the official GitHub repository for the **CronosCub** memecoin, the most playful and fierce meme token on the Cronos blockchain! Inspired by the majestic lion of Crypto.com, $CROCUB takes it's place as the cub next in line to lead the pride! CronosCub is here to bring you a roaring good time. Whether you're a seasoned Crypto.com Lion or a new cub in the crypto jungle, **CronosCub** is designed by the community and for the community.
+1. **ERC20 Compliance**: The contract adheres to the ERC20 standard, ensuring compatibility with wallets and exchanges.
+2. **Developer Vesting**: A vesting schedule for developer tokens to align incentives with long-term project success.
+3. **Community Token Distribution**: Manual and automatic distribution of tokens to promote engagement and growth, particularly through the dusting mechanism.
+4. **Liquidity Provision**: Allocation of tokens to ensure sufficient liquidity on exchanges.
 
----
+## Tokenomics
 
-## What is CronosCub?
+- **Total Supply**: 3,000,000 $CROCUB
+- **Developer Reserve (10%)**: 300,000 $CROCUB
+- **Community Distribution (70%)**: 2,100,000 $CROCUB
+- **Liquidity and Exchange Listings (20%)**: 600,000 $CROCUB
 
-CronosCub ($CROCUB) is a community-driven meme token that combines the power of the Crypto.com community and the resilience of the Cronos blockchain with the fun excitement of the meme culture.
+## Distribution Timeline for Dusting
 
----
+### Initial Phase (Months 1-3): Launch and Awareness
+- **Objective**: Create awareness and incentivize early adopters.
+- **Distribution Frequency**: Weekly or bi-weekly.
+- **Amount**: 20% of community tokens (420,000 $CROCUB).
+- **Activities**: Airdrops, social media campaigns, community engagement events.
 
-## Key Features
+### Growth Phase (Months 4-6): Building the Community
+- **Objective**: Expand the community and encourage holding.
+- **Distribution Frequency**: Bi-weekly to monthly.
+- **Amount**: 15% of community tokens (315,000 $CROCUB).
+- **Activities**: Referral bonuses, holding rewards, and community contests.
 
-### 🦁 Lion-Themed Fun
-CronosCub brings the spirit of the lion to the crypto world. Join the pride and enjoy lion-themed memes, NFTs, and community giveaways.
+### Engagement Phase (Months 7-12): Sustaining Interest
+- **Objective**: Sustain user interest and engagement.
+- **Distribution Frequency**: Monthly.
+- **Amount**: 20% of community tokens (420,000 $CROCUB).
+- **Activities**: Gamified rewards, educational initiatives, and community-led events.
 
-### 🌐 Built on Cronos
-Utilizing the Cronos blockchain, CronosCub ensures fast, secure, and low-cost transactions. Experience the best of DeFi with the reliability of Cronos.
+### Stabilization Phase (Months 13-24): Long-term Growth
+- **Objective**: Ensure long-term project sustainability and community loyalty.
+- **Distribution Frequency**: Every two months.
+- **Amount**: 20% of community tokens (420,000 $CROCUB).
+- **Activities**: Ongoing engagement rewards, participation in governance, and special events.
 
-### 🏆 Community-Driven
-Built by the Crypto.com community, for the Crypto.com community, our community is at the heart of CronosCub. Engage in meme contests, vote on future developments, and help steer the direction of our lion pride.
-
-### 🎨 Unique Artwork
-Own a piece of the pride with our exclusive lion-themed NFTs. Each NFT is a unique masterpiece that adds value to your collection.
-
-### 🐾 Giveaways
-Keep a lookout for giveaways, airdrops and more exciting rewards.
-
----
-
-## How to Get Started
-
-### Prerequisites
-
-1. **Install a Cronos-Compatible Wallet**: Download and set up a wallet that supports the Cronos blockchain, such as MetaMask or Trust Wallet.
-2. **Get CRO Tokens**: Purchase CRO tokens from an exchange and transfer them to your wallet.
-
-### Steps to Acquire CronosCub
-
-1. **Access a Cronos DEX**: Visit a decentralized exchange (DEX) that supports Cronos. **(note: `$CROCUB` is not yet listed on any exchange. Watch our social media for `$CROCUB` IDO/ICO dates!)**.
-2. **Swap for CronosCub**: Exchange your CRO tokens for CronosCub tokens.
-
----
-
-## Token Contract
-
-Our token contract is deployed on the Cronos blockchain and can be viewed at:
-
-**Contract Address**: ``
-
-### Token Details
-
-- **Name**: Cronos Cub
-- **Symbol**: `$CROCUB`
-- **Decimals**: 18
-- **Total Supply**: 500,000,000,000 CROCUB
-
-### Tokenomics
-note: Tokenomics whitepaper to be released soon, before launch.
-
----
-
-## Roadmap
-
-Find a more detailed roadmap here: https://github.com/Cronos-Cub/CROCUB/blob/main/ROADMAP.md
-
-### Phase 1: Cub Birth
-- ✅ Deploy the Token on Cronos Testnet Blockchain
-- ❌ Deploy the Token on Cronos Mainnet Blockchain
-- ❌ Initial DEX Offering (IDO)
-- ❌ Community building and social media launch
-- ❌ First meme contest
-- ❌ Initial Community Giveaway
-
-### Phase 2: Cub Growth
-- ❌ NFT artwork release
-- ❌ Partnerships with other projects
-- ❌ Major exchange listings
-
-### Phase 3: Pride Expansion
-- ❌ Full DeFi ecosystem integration
-- ❌ Giveaways and Rewards
-- ❌ Charity initiatives to support wildlife conservation
-- ❌ Continued community events and contests
-
----
-
-## Join the Pride
-
-CronosCub is more than a token; it’s a community of like-minded individuals who love fun, memes, and the potential of DeFi. Whether you're here for the memes, the staking rewards, or the exclusive NFTs, there's a place for you in our pride.
-
-### Social Media
-
-- **Reddit**: https://reddit.com/r/CronosCub
-- **Twitter / X**: https://x.com/CronosCub
-- **Website**: Coming Soon!
-
----
-
-## Contributors
-
-#### Main Developer
-Dehvon Curtis
-https://www.linkedin.com/in/dehvcurtis/
-
-We welcome contributions from our community. Feel free to fork this repository, submit issues, or create pull requests. Let's make CronosCub the fiercest meme token in the crypto jungle together!
-
----
-
-### Roar with us and be part of the wildest meme token adventure on Cronos!
-
-**CronosCub** – Where the fun is fierce, and the pride is strong! 🦁🌟
+### Ongoing Phase (Post 24 Months): Continuous Engagement
+- **Objective**: Maintain an active and
