@@ -2,6 +2,20 @@
 
 Welcome to the official repository for the CronosCub ($CROCUB) smart contract, a community-driven cryptocurrency project on the Cronos blockchain. CronosCub is all about **dusting**—the unique concept of distributing small amounts of tokens to token holder wallets. This innovative approach aims to engage users, promote adoption, and create a fun and inclusive community.
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Dusting Mechanism](#dusting-mechanism)
+3. [Gas Optimization](#gas-optimization)
+4. [Audit and Security](#audit-and-security)
+5. [Features and Functions](#features-and-functions)
+6. [Tokenomics](#tokenomics)
+7. [Distribution Timeline for Dusting](#distribution-timeline-for-dusting)
+   - [Initial Phase (Months 1-3): Launch and Awareness](#initial-phase-months-1-3-launch-and-awareness)
+   - [Growth Phase (Months 4-6): Building the Community](#growth-phase-months-4-6-building-the-community)
+   - [Engagement Phase (Months 7-12): Sustaining Interest](#engagement-phase-months-7-12-sustaining-interest)
+   - [Stabilization Phase (Months 13-24): Long-term Growth](#stabilization-phase-months-13-24-long-term-growth)
+   - [Ongoing Phase (Post 24 Months): Continuous Engagement](#ongoing-phase-post-24-months-continuous-engagement)
+
 ## Overview
 
 CronosCub is designed for and by the Crypto.com community, leveraging the concept of dusting to spread small amounts of tokens (referred to as "dust") across the wallets of existing token holders. This not only raises awareness but also encourages active participation in the cryptocurrency ecosystem.
@@ -73,4 +87,7 @@ The CronosCub smart contract has undergone an internal audit, focusing on:
 - **Activities**: Ongoing engagement rewards, participation in governance, and special events.
 
 ### Ongoing Phase (Post 24 Months): Continuous Engagement
-- **Objective**: Maintain an active and
+- **Objective**: Maintain an active and engaged community.
+- **Distribution Frequency**: As needed based on community engagement and growth.
+- **Amount**: Remaining community tokens.
+- **Activities**: Continuous community rewards and participation incentives.
